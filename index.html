@@ -14,6 +14,9 @@
             <div class="logo">
                 <a href="#">Ibrahim Omar</a>
             </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -26,91 +29,147 @@
 
     <header class="hero">
         <div class="hero-content">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/150" alt="Ibrahim Omar">
+            </div>
             <h1>Ibrahim Omar</h1>
             <h2>Software Engineer & Computer Science Student</h2>
             <p>Passionate about building innovative solutions and exploring new technologies</p>
             <div class="social-links">
-                <a href="https://github.com/ibrahimomar9316" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/ibrahimomar9316" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:your.email@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I am a Computer Science student at TU Delft, specializing in software engineering and compiler architecture. With a strong foundation in both theoretical computer science and practical software development, I am passionate about creating efficient and scalable solutions to complex problems.</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="section-content">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Software Engineering Intern</h3>
-                    <p class="timeline-date">Summer 2023</p>
-                    <p>Company Name</p>
-                    <ul>
-                        <li>Developed and maintained web applications using modern technologies</li>
-                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
-                        <li>Implemented new features and optimized existing codebase</li>
-                    </ul>
+    <main>
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a Computer Science student at TU Delft, specializing in software engineering and compiler architecture. With a strong foundation in both theoretical computer science and practical software development, I am passionate about creating efficient and scalable solutions to complex problems.</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Compiler Design</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>TU Delft</h3>
-                <p>Master's in Computer Science</p>
-                <p class="timeline-date">2022 - Present</p>
-                <ul>
-                    <li>Specialization in Compiler Architecture</li>
-                    <li>Relevant coursework: Advanced Algorithms, Distributed Systems, Software Engineering</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>MCA Study Plan</h3>
-                    <p>Interactive study plan website for Compiler Architecture course</p>
-                    <div class="project-links">
-                        <a href="https://ibrahimomar9316.github.io/MCA-study-plan" target="_blank">View Project</a>
-                        <a href="https://github.com/ibrahimomar9316/MCA-study-plan" target="_blank">Source Code</a>
+        <section id="experience" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Software Engineering Intern</h3>
+                        <p class="timeline-date">Summer 2023</p>
+                        <p>Company Name</p>
+                        <ul>
+                            <li>Developed and maintained web applications using modern technologies</li>
+                            <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                            <li>Implemented new features and optimized existing codebase</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="section-content">
-            <h2>Contact</h2>
-            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com" class="contact-button">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://linkedin.com/in/your-linkedin" class="contact-button" target="_blank">
-                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                </a>
+        <section id="education" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>TU Delft</h3>
+                    <p>Master's in Computer Science</p>
+                    <p class="timeline-date">2022 - Present</p>
+                    <ul>
+                        <li>Specialization in Compiler Architecture</li>
+                        <li>Relevant coursework: Advanced Algorithms, Distributed Systems, Software Engineering</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="compiler">Compiler</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <h3>MCA Study Plan</h3>
+                        <p>Interactive study plan website for Compiler Architecture course</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ibrahimomar9316.github.io/MCA-study-plan" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                            <a href="https://github.com/ibrahimomar9316/MCA-study-plan" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Contact</h2>
+                <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-button">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="form-error"></div>
+                    <div class="form-success"></div>
+                </form>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-button">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/your-linkedin" class="contact-button" target="_blank">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Ibrahim Omar. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Ibrahim Omar. All rights reserved.</p>
+            <a href="#" class="scroll-top">
+                <i class="fas fa-arrow-up"></i> Back to Top
+            </a>
+        </div>
     </footer>
+
+    <button class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
